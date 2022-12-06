@@ -13,7 +13,7 @@ namespace LogicalProgram
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter the no to choose perform: \n 1) Fibonacci Series \n 2) Perfect no \n" +
+                Console.WriteLine("Enter the no to choose perform: \n 1) Fibonacci Series \n 2) Perfect no \n 3) Prime no \n" +
                 "Enter the no to operate: ");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -26,6 +26,10 @@ namespace LogicalProgram
                     case 2:
                         Perfectno perfectno = new Perfectno();
                         perfectno.No();
+                        break;
+                    case 3:
+                        Primeno primeno= new Primeno();
+                        primeno.Prime();
                         break;
                 }
 
