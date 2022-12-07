@@ -13,7 +13,9 @@ namespace LogicalProgram
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter the no to choose perform: \n 1) Fibonacci Series \n 2) Perfect no \n 3) Prime no \n" +
+                Console.WriteLine("Enter the no to choose perform: \n 1) Fibonacci Series \n 2) Perfect no \n 3) Prime no \n 4) Reverse no\n " +
+                    "5) Coupon chk" +
+                    
                 "Enter the no to operate: ");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -31,6 +33,16 @@ namespace LogicalProgram
                         Primeno primeno= new Primeno();
                         primeno.Prime();
                         break;
+                    case 4:
+                        Reverse reverse = new Reverse();
+                        reverse.no();
+                        break;
+                    case 5:
+                        Coupon coupon = new Coupon();
+                        coupon.Num();
+                        break;
+
+
                 }
 
             }
